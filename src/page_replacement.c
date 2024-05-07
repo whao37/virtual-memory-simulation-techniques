@@ -8,25 +8,6 @@
 pfn_t select_victim_frame(void);
 
 
-/*  --------------------------------- PROBLEM 7 --------------------------------------
-    Make a free frame for the system to use.
-
-    You will first call the page replacement algorithm to identify an
-    "available" frame in the system.
-
-    In some cases, the replacement algorithm will return a frame that
-    is in use by another page mapping. In these cases, you must "evict"
-    the frame by using the frame table to find the original mapping and
-    setting it to invalid. If the frame is dirty, write its data to swap!
- * ----------------------------------------------------------------------------------
- */
-
-
-
-
-
-
-
 /**
  * selects victim frame that will be freed and then returned
  * if current mapped and is dirty, then write to swap
